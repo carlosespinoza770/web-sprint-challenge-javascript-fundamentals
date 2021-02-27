@@ -28,10 +28,20 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(number) {
+  let sumOfNumbers = 0
+for (let i = 0; i <= number; i++) {
+  sumOfNumbers += i
+ }
+ console.log(sumOfNumbers)
+ console.log(number)
+ return sumOfNumbers
+ 
+}
 
-  }
+
+
+  
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,9 +66,24 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(zooAnimals){
+    const displayNames = []
+       zooAnimals.forEach((animal)=> {
+        displayNames.push(`name: ${animal.animal_name}, scientific: ${animal.scientific_name}`);
+
+       }) ;
+    // for(let i = 0; i < zooAnimals.length; i++) {
+      // zooAnimals.scientific_name = zooAnimals[i].scientific_name;
+      // zooAnimals.zooAnimals = zooAnimals[i].zooAnimals;
+      // displayNames.push(`name: ${zooAnimals[i].animal_name}, scientific: ${zooAnimals[i].scientific_name}`);
+     
+    // }
+    console.log(zooAnimals.length)
+    return displayNames
   }
+  
+
+// console.log(displayNames);
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -101,8 +126,8 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b, cb){
+    return cb
   }
  
   
