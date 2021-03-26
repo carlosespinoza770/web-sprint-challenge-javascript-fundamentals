@@ -28,10 +28,16 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
-  }
+function summation(n) {
+  let son = 0
+for (let i = 0; i <= n; i++) {
+  son += i
+ }
+ console.log(son)
+ console.log(n)
+ return son
+ 
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,9 +62,20 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+ function animalNames(za){
+  const displayNames = []
+     za.forEach((animal)=> {
+      displayNames.push(`name: ${animal.animal_name}, scientific: ${animal.scientific_name}`);
+
+     }) ;
+
+     
+    console.log(za.length)
+    return displayNames
   }
+  
+
+// 
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -67,7 +84,7 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
+  function lowerCaseNames(list){
     /*Your Code Here*/
   }
   
